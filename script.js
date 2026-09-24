@@ -98,3 +98,8 @@ window.addEventListener('resize', resizeProwlWave);
 resizeProwlWave();
 drawProwlWave(0);
 setInterval(() => drawProwlWave(performance.now()), 100);
+
+document.querySelector('.back-to-top').addEventListener('click', (event) => {
+  event.preventDefault();
+  document.scrollingElement.scrollTop = 0;
+});
