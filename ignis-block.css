@@ -1,0 +1,52 @@
+/* whitebots.online — Ignis section theme. Paste at the END of style.css.
+   Dark ember glass (from the Ignis presentation theme) inside the
+   light page. Reuses .prowl-layout / .product-panel / .feature-row. */
+.ignis-section {
+  --orange: #ff6b35; --mint: #ff6b35;
+  --ink: #f5f2ea; --paper: #06060e;
+  --line: rgba(245,242,234,.16); --muted: rgba(245,242,234,.65);
+  background: #06060e; color: #f5f2ea;
+  position: relative; overflow: hidden;
+}
+.ignis-section .accent { color: #ff6b35; }
+.ignis-section .eyebrow { color: #ff6b35; }
+.ignis-section .eyebrow-line { background: #ff6b35; }
+.ignis-section .section-number { color: rgba(245,242,234,.5); }
+.ignis-section .index-number { color: #ff6b35; }
+.ignis-section > *:not(#ignis-wave) { position: relative; z-index: 1; }
+#ignis-wave {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  opacity: .22; pointer-events: none; z-index: 0;
+}
+.ignis-section .product-label { color: rgba(245,242,234,.55); }
+.ignis-section .prowl-title p { color: rgba(245,242,234,.7); }
+.ignis-section .button-outline { border: 1px solid #ff6b35; color: #f5f2ea; }
+.ignis-section .button-outline:hover { background: #ff6b35; color: #06060e; }
+.ignis-section .product-panel {
+  background: rgba(255,255,255,.04);
+  border-color: rgba(245,242,234,.2);
+  backdrop-filter: blur(8px);
+}
+.ignis-section .panel-topline { border-bottom: 1px solid rgba(245,242,234,.16); color: rgba(245,242,234,.55); }
+.ignis-section .live-mark { color: #ff6b35; }
+.ignis-section .live-mark i { background: #ff6b35; }
+.ignis-display {
+  min-height: 320px;
+  background: url('ignis.png') center / cover no-repeat;
+  overflow: hidden;
+}
+.ignis-section .panel-stats { border-top: 1px solid rgba(245,242,234,.16); }
+.ignis-section .panel-stats strong { color: #f5f2ea; }
+.ignis-section .panel-stats span { color: rgba(245,242,234,.5); }
+.ignis-section .feature-row {
+  background: rgba(255,255,255,.04);
+  border-bottom: 1px solid rgba(245,242,234,.16);
+}
+.ignis-section .feature-row h3 { color: #f5f2ea; }
+.ignis-section .feature-row p { color: rgba(245,242,234,.65); }
+.ignis-section .feature-row > iconify-icon { color: #ff6b35; }
+.ignis-section .feature-no { color: rgba(245,242,234,.45); }
+.ignis-section ::selection { background: rgba(255,107,53,.4); }
+@media (max-width: 760px) {
+  .ignis-display { min-height: 420px; }
+}
